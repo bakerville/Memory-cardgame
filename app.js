@@ -52,7 +52,7 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let ramdomPos = Math.ceil(Math.random() * 12);
+    let ramdomPos = Math.floor(Math.random() * 12);
     card.style.order = ramdomPos;
   });
 })();
